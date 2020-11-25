@@ -26,7 +26,7 @@ async function fetchAPI(location){
 
 function generateHTML(data){
     const html = `
-    <h3 class="temp grey-text text-lighten-2">${data.current.temperature}&deg;</h3>
+    <h3 class="temp grey-text text-lighten-2">${data.current.temperature}&degc;</h3>
                 <h3 class="status grey-text text-lighten-2">${data.current.weather_descriptions.map(item => item).join(" ")}</h3>
                 <div class="query">${data.request.query}</div>
                 
